@@ -7,7 +7,7 @@ Create new branches to modify as required for different job listings by differen
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex shubham_rawat_resume.tex
 ```
 
 ### Preview
