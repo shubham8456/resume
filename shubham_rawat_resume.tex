@@ -4,7 +4,9 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
+\title{Shubham Rawat Resume}
+\author{Shubham Rawat}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -53,6 +55,8 @@
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
+
+\newcommand{\resumeSummaryItem}{\item\small{\vspace{-3pt}}}
 
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
@@ -107,22 +111,17 @@
 
 %-----------SUMMARY-----------------
 \section{Summary}
-  \resumeSubHeadingListStart
-    \resumeSubItem{}
-      {Overall 1.8+ years of experienceas as a Software Developer. Rich experience in developing applications by using Ruby.}
-    \resumeSubItem{}
-      {Open source python library for financial data analysis and machine learning for finance.}
-  \resumeSubHeadingListEnd
+  \begin{itemize}
+    \resumeSummaryItem Overall 1.8+ years of experienceas as a Software Developer. Rich experience in developing applications using Ruby.
+    \resumeSummaryItem Currently working at PlanSource India, Bangalore (Oct. 2022 - Present).
+    \resumeSummaryItem Experience in the development of Restful web services.
+    \resumeSummaryItem Excellent understanding of Object Oriented Programming and Solid Principles.
+    \resumeSummaryItem Experience in Test driven development to using RSpec/Minitest to improve code quality.
+    \resumeSummaryItem Experience in working with agile scrum framework.
+  \end{itemize}
 
 
 
-%   • Overall 3+ years of experience as a Software Developer. Kich experience in developing applications by using
-% Kudy/ .NEl.
-% • Currently working at Flansource India, Bangalore (Dec 2020 - F'resent).
-% • Excellent understanding of Object Oriented Programming and sOLID Principles.
-% • Experience using RSpec, Minitest, and Ruby Critic to improve code quality.
-% • Experience in the development of Restful web services
-% • Experience in working with agile scrum methodologies
 
 
 %-----------EXPERIENCE-----------------
@@ -203,13 +202,13 @@
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-     \hfill
-     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-   }
- \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+      \hfill
+      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+    }
+  \resumeSubHeadingListEnd
 
 
 
