@@ -12,7 +12,8 @@ docker run --rm -i -v "$PWD":/data latex pdflatex shubham_rawat_resume.tex
 
 ### Preview
 
-![Resume Screenshot](/resume_preview.png)
+![Resume Screenshot 1](/resume_preview_1.png)
+![Resume Screenshot 2](/resume_preview_2.png)
 
 ### License
 
