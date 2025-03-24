@@ -14,6 +14,8 @@ docker run --rm -i -v "$PWD":/data latex pdflatex shubham_rawat_resume.tex
 
 Format is MIT but all the data is owned by [Sourabh Bajaj](https://github.com/sb2nov/resume).
 
+----
+
 ### Resume Preview
 
 ![Resume Screenshot 1](/resume_preview_1.png)
