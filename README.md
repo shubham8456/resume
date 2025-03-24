@@ -17,3 +17,4 @@ Format is MIT but all the data is owned by [Sourabh Bajaj](https://github.com/sb
 ### Resume Preview
 
 ![Resume Screenshot 1](/resume_preview_1.png)
+![Resume Screenshot 2](/resume_preview_2.png)
