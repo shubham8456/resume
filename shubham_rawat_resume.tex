@@ -74,16 +74,17 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textit{\small#1} & \textit{\small #2} \\
-  \end{tabular*}\vspace{-5pt}
+\newcommand{\resumeSubheadingMulti}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -120,7 +121,7 @@
 %------------------------------------------------------------------------------SUMMARY------------------------------------------------------------------------------
 \section{Summary}
   \justify
-  Software Developer with over 3 years of experience in designing and building scalable, cloud-native applications across diverse environments. Skilled in multiple programming languages and cloud platforms, with a strong focus on delivering robust, integrated solutions. Recently contributed to the integration of Generative AI services into core product offerings, enhancing user experience through intelligent assistance and intuitive workflows. Passionate about leveraging AI to simplify complex systems and drive user engagement. Seeking to contribute to innovative teams that prioritize performance, usability, and forward-thinking technology.
+    Software Developer with over 3 years of experience in designing and building scalable, cloud-native applications across diverse environments. Skilled in multiple programming languages and cloud platforms, with a strong focus on delivering robust, integrated solutions. Recently contributed to the integration of Generative AI services into core product offerings, enhancing user experience through intelligent assistance and intuitive workflows. Actively incorporate AI agents and GenAI tools into daily development workflows to accelerate delivery, improve coding standards, and ensure comprehensive handling of edge cases. Passionate about leveraging AI to simplify complex systems and drive user engagement. Seeking to contribute to innovative teams that prioritize performance, usability, and forward-thinking technology.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -129,23 +130,23 @@
 
   \resumeSubHeadingListStart
 
-    \resumeSubheading
+    \resumeSubheadingMulti
       {PlanSource India Operations Pvt. Ltd.}{Bengaluru, India}
-      {\textbf{Associate Software Engineer} (Full-time)}{Aug. 2023 - Present (2 years)}
+      {\textbf{Software Engineer} (Full-time)}{April. 2025 - Present}
+      {\textbf{Associate Software Engineer} (Full-time)}{August. 2023 - March. 2025}
       \resumeItemListStart
-        \resumeExperienceItem{Designed and implemented end-to-end architecture for various projects, collaborating with cross-functional teams to develop and deploy web applications. Handled both back-end and front-end tasks, developed new APIs, ensured 100\% test coverage.}
-        \resumeExperienceItem{Implemented username and password reset flows via a RASA-based chatbot, enabling users to resolve account issues and get information without navigating the UI.}
-        \resumeExperienceItem{Integrated an LLM-based GenAI model into business dashboards, creating a chatbot that allows users to obtain insights by querying the dashboard data directly.}
-        \resumeExperienceItem{Collaborated with the AWS team in a workshop to develop a smart agent designed to assist users in selecting their benefits. The agent utilized user demographics and survey responses to make informed decisions, enhancing the user experience by providing personalized and accurate benefit recommendations.}
-        \resumeExperienceItem{Developed an admin chatbot capable of answering platform-specific questions and automating system tasks/jobs. My contribution was in creating the AI agent and supporting back-end APIs.}
-        \resumeExperienceItem{Implemented and integrated Superset, an open-source BI and visualization tool, into the product, resulting in savings of over \$200k.}
-        \resumeExperienceItem{Automated ETL pipelines and ecosystem integrations on the Tray.io platform, managing crucial data for high-revenue clients.}
-        \resumeExperienceItem{Brainstormed and developed GenAI initiatives as part of a research team, including a summary generation tool and a data extraction system. These features were integrated into the product, making it a differentiator from our rivals and simplifying user tasks.}
+        \resumeExperienceItem{Designed and implemented end-to-end architecture for multiple web applications, contributing across \textbf{backend} (API development), \textbf{frontend}, and \textbf{GenAI}-based features with 100\% test coverage.}
+        \resumeExperienceItem{Built username and password reset flows via a \textbf{RASA-based chatbot}, enabling users to resolve account issues through conversational UI.}
+        \resumeExperienceItem{Collaborated with a team from AWS to develop a smart benefits assistant that used user demographics and survey data to deliver personalized recommendations.}
+        \resumeExperienceItem{Contributed to the architecture and backend development of a virtual assistant powered by \textbf{AWS Bedrock}, enabling users to query platform knowledge and trigger system tasks using natural language.}
+        \resumeExperienceItem{Replaced embedded \textbf{Looker} dashboards with \textbf{Superset} in the user-facing app, independently leading the integration and saving over \$200K in licensing costs.}
+        \resumeExperienceItem{Researched and \textbf{developed multiple GenAI initiatives}, including a document summarization tool, data extraction system, and a KPI dashboard chatbot, etc.}
+        \resumeExperienceItem{Incorporated AI agents and GenAI tools into daily development workflows to accelerate delivery, improve coding standards, and ensure comprehensive handling of edge cases.}
       \resumeItemListEnd
 
     \resumeSubheading
       {MountBlue Technologies Pvt. Ltd.}{Bengaluru, India}
-      {\textbf{Software Development Engineer I} (Contract - \textbf{PlanSource})}{Aug. 2022 - Jul. 2023 (1 year)}
+      {\textbf{Software Development Engineer} (Contract - \textbf{PlanSource})}{August. 2022 - July. 2023}
       \resumeItemListStart
         \resumeExperienceItem{Developed an event-driven system using \textbf{AWS SQS and Lambdas} for processing and transmitting bulk data to business partners.}
         \resumeExperienceItem{Wrote production-ready code and \textbf{developed a comprehensive testing framework} to validate API data accuracy, followed by implementing a \textbf{CI/CD pipeline} to automate test execution and ensure reliable, defect-free deployments.}
@@ -155,15 +156,6 @@
   \resumeSubHeadingListEnd
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
 
 
