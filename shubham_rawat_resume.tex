@@ -13,6 +13,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{ragged2e} % Enables \justify
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -42,8 +43,11 @@
 % Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
+
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Custom Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -70,143 +74,138 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textit{\small#1} & \textit{\small #2} \\
-  \end{tabular*}\vspace{-5pt}
+\newcommand{\resumeSubheadingMulti}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \begin{document}
 
-
-
-
-
-%----------HEADING-----------------
+%------------------------------------------------------------------------------HEADING------------------------------------------------------------------------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://www.linkedin.com/in/rawat-shubham/}{\Large Shubham Rawat}} & Email : \href{mailto:shubham8456@outlook.com}{shubham8456@outlook.com} \\
-  \href{https://www.linkedin.com/in/rawat-shubham/}{LinkedIn: Shubham Rawat} & Mobile : \href{tel:+919639304451}{+91-963-930-4451} \\
+  \href{https://www.linkedin.com/in/rawat-shubham/}{LinkedIn: linkedin/rawat-shubham} & Mobile : \href{tel:+919639304451}{+91-963-930-4451} \\
   \href{https://github.com/shubham8456/}{GitHub: github.com/shubham8456}
 \end{tabular*}
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-%-----------SUMMARY-----------------
+%------------------------------------------------------------------------------SUMMARY------------------------------------------------------------------------------
 \section{Summary}
-  \begin{itemize}
-    \resumeSummaryItem Over 2.5+ years of experience developing applications using ruby, python, java, javascript.
-    \resumeSummaryItem Extensive experience with different AWS services (Lambda, DynamoDB, Bedrock, S3, EC2, SQS) and Docker for containerization.
-    \resumeSummaryItem Enhanced and maintained a RASA framework based chatbot, and worked on multiple generative AI projects using AWS Bedrock, OpenAI and LangChain.
-    \resumeSummaryItem Strong understanding of Object-Oriented Programming and SOLID principles.
-    \resumeSummaryItem Skilled in Test-Driven Development, ensuring comprehensive test coverage and defect-free code.
-    \resumeSummaryItem Experienced in utilizing the Agile Scrum framework, adhering to its best practices for optimal project delivery.
-  \end{itemize}
+  \justify
+    Software Developer with over 3 years of experience in designing and building scalable, cloud-native applications across diverse environments. Skilled in multiple programming languages and cloud platforms, with a strong focus on delivering robust, integrated solutions. Recently contributed to the integration of Generative AI services into core product offerings, enhancing user experience through intelligent assistance and intuitive workflows. Actively incorporate AI agents and GenAI tools into daily development workflows to accelerate delivery, improve coding standards, and ensure comprehensive handling of edge cases. Passionate about leveraging AI to simplify complex systems and drive user engagement. Seeking to contribute to innovative teams that prioritize performance, usability, and forward-thinking technology.
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-%-----------EXPERIENCE-----------------
+%----------------------------------------------------------------------------EXPERIENCE------------------------------------------------------------------------------
 \section{Experience}
+
   \resumeSubHeadingListStart
 
-    \resumeSubheading
+    \resumeSubheadingMulti
       {PlanSource India Operations Pvt. Ltd.}{Bengaluru, India}
-      {Associate Software Engineer (Full-time)}{August. 2023 - Present}
+      {\textbf{Software Engineer} (Full-time)}{April. 2025 - Present}
+      {\textbf{Associate Software Engineer} (Full-time)}{August. 2023 - March. 2025}
       \resumeItemListStart
-        \resumeExperienceItem{Designed and implemented end-to-end architecture for various projects, collaborating with cross-functional teams to develop and deploy web applications. Handled both back-end and front-end tasks, developed new APIs, ensured 100\% test coverage, and managed front-end development using JavaScript and CSS.}
-        \resumeExperienceItem{Enhanced a RASA-based chatbot with features for password resets, username retrieval, and user queries, allowing users to easily obtain information without navigating the UI.}
-        \resumeExperienceItem{Integrated an LLM-based GenAI model into business dashboards, creating a chatbot that allows users to obtain insights by querying the dashboard data directly.}
-        \resumeExperienceItem{Collaborated with the AWS team in a workshop to develop a smart agent designed to assist users in selecting their benefits. The agent utilized user demographics and survey responses to make informed decisions, enhancing the user experience by providing personalized and accurate benefit recommendations.}
-        \resumeExperienceItem{Developed an admin chatbot capable of answering platform-specific questions and automating system tasks/jobs. My contribution was in creating the AI agent and supporting back-end APIs.}
-        \resumeExperienceItem{Implemented and integrated Superset, an open-source BI and visualization tool, into the product, resulting in savings of over \$200k.}
-        \resumeExperienceItem{Automated ETL pipelines and ecosystem integrations on the Tray.io platform, managing crucial data for high-revenue clients.}
-        \resumeExperienceItem{Brainstormed and developed GenAI initiatives as part of a research team, including a summary generation tool and a data extraction system. These features were integrated into the product, making it a differentiator from our rivals and simplifying user tasks.}
+        \resumeExperienceItem{Designed and implemented end-to-end architecture for multiple web applications, contributing across \textbf{backend} (API development), \textbf{frontend}, and \textbf{GenAI}-based features with 100\% test coverage.}
+        \resumeExperienceItem{Built username and password reset flows via a \textbf{RASA-based chatbot}, enabling users to resolve account issues through conversational UI.}
+        \resumeExperienceItem{Collaborated with a team from AWS to develop a smart benefits assistant that used user demographics and survey data to deliver personalized recommendations.}
+        \resumeExperienceItem{Contributed to the architecture and backend development of a virtual assistant powered by \textbf{AWS Bedrock}, enabling users to query platform knowledge and trigger system tasks using natural language.}
+        \resumeExperienceItem{Replaced embedded \textbf{Looker} dashboards with \textbf{Superset} in the user-facing app, independently leading the integration and saving over \$200K in licensing costs.}
+        \resumeExperienceItem{Researched and \textbf{developed multiple GenAI initiatives}, including a document summarization tool, data extraction system, and a KPI dashboard chatbot, etc.}
+        \resumeExperienceItem{Incorporated AI agents and GenAI tools into daily development workflows to accelerate delivery, improve coding standards, and ensure comprehensive handling of edge cases.}
       \resumeItemListEnd
 
     \resumeSubheading
       {MountBlue Technologies Pvt. Ltd.}{Bengaluru, India}
-      {Software Development Engineer (Contract - PlanSource)}{August. 2022 - July. 2023}
+      {\textbf{Software Development Engineer} (Contract - \textbf{PlanSource})}{August. 2022 - July. 2023}
       \resumeItemListStart
-        \resumeExperienceItem{Established a comprehensive testing framework which ensured accurate data transfer via crucial APIs.}
-        \resumeExperienceItem{Developed an event-driven system using AWS SQS and Lambdas for processing and transmitting bulk data to business partners.}
-        \resumeExperienceItem{Implemented CI/CD pipelines to ensure only defect-free code is deployed to servers through automated testing and code deployment.}
-        \resumeExperienceItem{Contributed to monolithic and microservices architecture in Ruby and JavaScript, while ensuring error-free code in tightly coupled systems.}
+        \resumeExperienceItem{Developed an event-driven system using \textbf{AWS SQS and Lambdas} for processing and transmitting bulk data to business partners.}
+        \resumeExperienceItem{Wrote production-ready code and \textbf{developed a comprehensive testing framework} to validate API data accuracy, followed by implementing a \textbf{CI/CD pipeline} to automate test execution and ensure reliable, defect-free deployments.}
+        \resumeExperienceItem{Contributed to \textbf{monolithic and microservices} architecture in Ruby and JavaScript, while ensuring error-free code in tightly coupled systems.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
 
-%-----------EDUCATION-----------------
+%-----------------------------------------------------------------------TECHNICAL SKIILS--------------------------------------------------------------------------
+\section{Technical Skills}
+  \resumeItemListStart
+    \resumeItem{Programming Languages}
+      {Ruby, Python, Javascript, Java, SQL}
+    \resumeItem{Databases}
+      {PostgreSQL, MySQL, Redis, Snowflake, DynamoDB}
+    \resumeItem{Cloud}
+      {AWS}
+    \resumeItem{Tools/Technologies}
+      {Docker, Git, OpenAI, LangChain, RASA, AWS Bedrock, Postman}
+  \resumeItemListEnd
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+%---------------------------------------------------------------------------EDUCATION------------------------------------------------------------------------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {College of Engineering Roorkee}{Roorkee, India}
-      {Bachelor of Technology in Computer Science and Engineering;  Percentage: 67.30}{July. 2014 -- June. 2018}
+      {B.Tech in Computer Science and Engineering;  Percentage: 67.30}{July. 2014 -- June. 2018}
     \resumeSubheading
       {Doon International School}{Dehradun, India}
       {XII CBSE;  Percentage: 84.60}{April. 2012 -- May. 2013}
   \resumeSubHeadingListEnd
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
 
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeItemListStart
-    \resumeItem{Languages}
-      {Ruby, Python, Javascript, Java, SQL}
-    \resumeItem{Technologies}
-      {AWS Cloud products (API Gateway, Lambda, S3, EC2, SQS, OpenSearch), Databases (mySQL, Postgres, Snowflake, Redis, AWS DynamoDB), Docker, AWS Bedrock, OpenAI API, LangChain, RASA, Web frameworks (Rails, FastAPI, ReactJS, Spring), tray.io, pendo.io}
-  \resumeItemListEnd
+%------------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Instagram Clone}
+%       {Created an Instagram clone web-app with features to follow users, view posts, like, and comment. Hosted on AWS EC2 with user uploads stored on AWS S3. Enabled user sign-up and authorization for social media use.}
+%     \resumeSubItem{Flight Booking web-app}
+%       {Built a flight booking app where admins create flight schedules and users book flights. Utilized PostgreSQL for data storage.}
+%     \resumeSubItem{Fundraiser website front-end}
+%       {Designed a fundraiser website to practice front-end skills, showcasing global campaigns and seeking donations for helping the needy.}
+%   \resumeSubHeadingListEnd
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Instagram Clone}
-      {Created an Instagram clone web-app with features to follow users, view posts, like, and comment. Hosted on AWS EC2 with user uploads stored on AWS S3. Enabled user sign-up and authorization for social media use.}
-    \resumeSubItem{Flight Booking web-app}
-      {Built a flight booking app where admins create flight schedules and users book flights. Utilized PostgreSQL for data storage.}
-    \resumeSubItem{Fundraiser website front-end}
-      {Designed a fundraiser website to practice front-end skills, showcasing global campaigns and seeking donations for helping the needy.}
-  \resumeSubHeadingListEnd
-
-
-
-
-
-%-------------------------------------------
 \end{document}
+
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
