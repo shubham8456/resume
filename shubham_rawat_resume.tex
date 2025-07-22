@@ -13,6 +13,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{ragged2e} % Enables \justify
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -118,14 +119,8 @@
 
 %------------------------------------------------------------------------------SUMMARY------------------------------------------------------------------------------
 \section{Summary}
-  \begin{itemize}
-    \resumeSummaryItem Over 3+ years of experience developing applications using ruby, python, javascript.
-    \resumeSummaryItem Extensive experience with different AWS cloud services (Lambda, DynamoDB, S3, EC2, etc.) and Docker for containerization.
-    \resumeSummaryItem Enhanced and maintained a RASA framework based chatbot, and worked on multiple generative AI projects using AWS Bedrock, OpenAI and LangChain.
-    \resumeSummaryItem Strong understanding of Object-Oriented Programming and SOLID principles.
-    \resumeSummaryItem Skilled in Test-Driven Development, ensuring comprehensive test coverage and defect-free code.
-    \resumeSummaryItem Experienced in utilizing the Agile Scrum framework, adhering to its best practices for optimal project delivery.
-  \end{itemize}
+  \justify
+  Software Developer with over 3 years of experience in designing and building scalable, cloud-native applications across diverse environments. Skilled in multiple programming languages and cloud platforms, with a strong focus on delivering robust, integrated solutions. Recently contributed to the integration of Generative AI services into core product offerings, enhancing user experience through intelligent assistance and intuitive workflows. Passionate about leveraging AI to simplify complex systems and drive user engagement. Seeking to contribute to innovative teams that prioritize performance, usability, and forward-thinking technology.
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -136,10 +131,10 @@
 
     \resumeSubheading
       {PlanSource India Operations Pvt. Ltd.}{Bengaluru, India}
-      {Associate Software Engineer (Full-time)}{August. 2023 - Present}
+      {Associate Software Engineer (Full-time)}{Aug. 2023 - Present (2 years)}
       \resumeItemListStart
-        \resumeExperienceItem{Designed and implemented end-to-end architecture for various projects, collaborating with cross-functional teams to develop and deploy web applications. Handled both back-end and front-end tasks, developed new APIs, ensured 100\% test coverage, and managed front-end development using JavaScript and CSS.}
-        \resumeExperienceItem{Enhanced a RASA-based chatbot with features for password resets, username retrieval, and user queries, allowing users to easily obtain information without navigating the UI.}
+        \resumeExperienceItem{Designed and implemented end-to-end architecture for various projects, collaborating with cross-functional teams to develop and deploy web applications. Handled both back-end and front-end tasks, developed new APIs, ensured 100\% test coverage.}
+        \resumeExperienceItem{Implemented username and password reset flows via a RASA-based chatbot, enabling users to resolve account issues and get information without navigating the UI.}
         \resumeExperienceItem{Integrated an LLM-based GenAI model into business dashboards, creating a chatbot that allows users to obtain insights by querying the dashboard data directly.}
         \resumeExperienceItem{Collaborated with the AWS team in a workshop to develop a smart agent designed to assist users in selecting their benefits. The agent utilized user demographics and survey responses to make informed decisions, enhancing the user experience by providing personalized and accurate benefit recommendations.}
         \resumeExperienceItem{Developed an admin chatbot capable of answering platform-specific questions and automating system tasks/jobs. My contribution was in creating the AI agent and supporting back-end APIs.}
@@ -150,12 +145,11 @@
 
     \resumeSubheading
       {MountBlue Technologies Pvt. Ltd.}{Bengaluru, India}
-      {Software Development Engineer (Contract - PlanSource)}{August. 2022 - July. 2023}
+      {Software Development Engineer I (Contract - \textbf{PlanSource})}{Aug. 2022 - Jul. 2023 (1 year)}
       \resumeItemListStart
-        \resumeExperienceItem{Established a comprehensive testing framework which ensured accurate data transfer via crucial APIs.}
-        \resumeExperienceItem{Developed an event-driven system using AWS SQS and Lambdas for processing and transmitting bulk data to business partners.}
-        \resumeExperienceItem{Implemented CI/CD pipelines to ensure only defect-free code is deployed to servers through automated testing and code deployment.}
-        \resumeExperienceItem{Contributed to monolithic and microservices architecture in Ruby and JavaScript, while ensuring error-free code in tightly coupled systems.}
+        \resumeExperienceItem{Developed an event-driven system using \textbf{AWS SQS and Lambdas} for processing and transmitting bulk data to business partners.}
+        \resumeExperienceItem{Wrote production-ready code and \textbf{developed a comprehensive testing framework} to validate API data accuracy, followed by implementing a \textbf{CI/CD pipeline} to automate test execution and ensure reliable, defect-free deployments.}
+        \resumeExperienceItem{Contributed to \textbf{monolithic and microservices} architecture in Ruby and JavaScript, while ensuring error-free code in tightly coupled systems.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -171,12 +165,33 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
+
+
+
+%-----------------------------------------------------------------------TECHNICAL SKIILS--------------------------------------------------------------------------
+\section{Technical Skills}
+  \resumeItemListStart
+    \resumeItem{Programming Languages}
+      {Ruby, Python, Javascript, Java, SQL}
+    \resumeItem{Databases}
+      {PostgreSQL, MySQL, Redis, Snowflake, DynamoDB}
+    \resumeItem{Cloud}
+      {AWS}
+    \resumeItem{Tools/Technologies}
+      {Docker, Git, OpenAI, LangChain, RASA, AWS Bedrock, Postman}
+  \resumeItemListEnd
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 %---------------------------------------------------------------------------EDUCATION------------------------------------------------------------------------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {College of Engineering Roorkee}{Roorkee, India}
-      {Bachelor of Technology in Computer Science and Engineering;  Percentage: 67.30}{July. 2014 -- June. 2018}
+      {B.Tech in Computer Science and Engineering;  Percentage: 67.30}{July. 2014 -- June. 2018}
     \resumeSubheading
       {Doon International School}{Dehradun, India}
       {XII CBSE;  Percentage: 84.60}{April. 2012 -- May. 2013}
@@ -186,28 +201,17 @@
 
 
 
-%-----------------------------------------------------------------------PROGRAMMING SKIILS--------------------------------------------------------------------------
-\section{Programming Skills}
-  \resumeItemListStart
-    \resumeItem{Languages}
-      {Ruby, Python, Javascript, Java, SQL}
-    \resumeItem{Technologies}
-      {AWS Cloud products (API Gateway, Lambda, S3, EC2, SQS, OpenSearch), Databases (mySQL, Postgres, Snowflake, Redis, AWS DynamoDB), Docker, AWS Bedrock, OpenAI API, LangChain, RASA, Web frameworks (Rails, FastAPI, ReactJS, Spring), tray.io, pendo.io}
-  \resumeItemListEnd
-%-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 
 %------------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Instagram Clone}
-      {Created an Instagram clone web-app with features to follow users, view posts, like, and comment. Hosted on AWS EC2 with user uploads stored on AWS S3. Enabled user sign-up and authorization for social media use.}
-    \resumeSubItem{Flight Booking web-app}
-      {Built a flight booking app where admins create flight schedules and users book flights. Utilized PostgreSQL for data storage.}
-    \resumeSubItem{Fundraiser website front-end}
-      {Designed a fundraiser website to practice front-end skills, showcasing global campaigns and seeking donations for helping the needy.}
-  \resumeSubHeadingListEnd
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Instagram Clone}
+%       {Created an Instagram clone web-app with features to follow users, view posts, like, and comment. Hosted on AWS EC2 with user uploads stored on AWS S3. Enabled user sign-up and authorization for social media use.}
+%     \resumeSubItem{Flight Booking web-app}
+%       {Built a flight booking app where admins create flight schedules and users book flights. Utilized PostgreSQL for data storage.}
+%     \resumeSubItem{Fundraiser website front-end}
+%       {Designed a fundraiser website to practice front-end skills, showcasing global campaigns and seeking donations for helping the needy.}
+%   \resumeSubHeadingListEnd
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \end{document}
