@@ -14,6 +14,8 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{ragged2e} % Enables \justify
+\usepackage{xcolor}
+
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -21,6 +23,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\newcommand{\linkicon}{{\color{black}\tiny$\nearrow$}} % small blue arrow as link icon
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -194,15 +197,13 @@
 
 
 %------------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------
-% \section{Projects}
-%   \resumeSubHeadingListStart
-%     \resumeSubItem{Instagram Clone}
-%       {Created an Instagram clone web-app with features to follow users, view posts, like, and comment. Hosted on AWS EC2 with user uploads stored on AWS S3. Enabled user sign-up and authorization for social media use.}
-%     \resumeSubItem{Flight Booking web-app}
-%       {Built a flight booking app where admins create flight schedules and users book flights. Utilized PostgreSQL for data storage.}
-%     \resumeSubItem{Fundraiser website front-end}
-%       {Designed a fundraiser website to practice front-end skills, showcasing global campaigns and seeking donations for helping the needy.}
-%   \resumeSubHeadingListEnd
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/shubham8456/insta-clone}{Instagram Clone \linkicon}}
+    {Developed an Instagram clone web application featuring user follow, post viewing, likes, and comments. Implemented secure user sign-up and authentication. Hosted the app on AWS EC2 with user media uploads stored reliably on AWS S3.}
+    \resumeSubItem{\href{https://github.com/shubham8456/flight_booking_app}{Flight Booking App \linkicon}}
+    {Designed a flight booking application enabling admins to manage flight schedules and users to book flights seamlessly. Leveraged PostgreSQL for reliable data management.}
+  \resumeSubHeadingListEnd
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \end{document}
